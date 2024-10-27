@@ -18,7 +18,7 @@ const fetchData = () => {
                 // Check if the iteration is over
                 // Run amimation if so
                 if (dataArr.length === dataArr.indexOf(customData) + 1) {
-                    document.querySelector('.song').play();
+                    
                     animationTimeline();
                 }
             });
@@ -30,7 +30,7 @@ const animationTimeline = () => {
     // Spit chars that needs to be animated individually
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
-
+    document.querySelector('.song').play();
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
         .split("")
         .join("</span><span>")}</span`;
