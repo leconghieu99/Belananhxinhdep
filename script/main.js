@@ -304,23 +304,6 @@ const animationTimeline = () => {
         tl.restart();
     });
 };
-window.addEventListener('load', () => {
-    Swal.fire({
-        title: 'Do you want to play music in the background?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.querySelector('.song').play();
-            fetchData();
-        } else {
-            fetchData();
-        }
-    });
-});
+
 // Run fetch and animation in sequence
 fetchData();
