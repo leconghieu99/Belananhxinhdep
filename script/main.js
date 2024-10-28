@@ -19,7 +19,7 @@ const fetchData = () => {
 
                 // Check if the iteration is over
                 // Run amimation if so
-                document.querySelector('.song').play();
+                //document.querySelector('.song').play();
                 if (dataArr.length === dataArr.indexOf(customData) + 1) {
                     animationTimeline();
                 }
