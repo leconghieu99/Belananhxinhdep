@@ -323,4 +323,4 @@ window.addEventListener('load', () => {
     });
 });
 // Run fetch and animation in sequence
-//fetchData();
+fetchData();
